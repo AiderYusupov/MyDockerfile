@@ -14,5 +14,6 @@ jobs:
     - name: Build the Docker image
       run: |-
         docker build . --file Dockerfile --tag aideryusupov/docker:latest 
+        docker run aideryusupov/docker:latest 
         docker login -u aideryusupov -p razvedka1rota
         docker push aideryusupov/docker:latest 
